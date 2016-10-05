@@ -1,0 +1,73 @@
+<ion-view >
+  <ion-content>
+<div class="search">
+    <div class="filters">
+        <ul>
+            <li class="seq" >
+                <span>综合排序</span>
+                <div class="filter-list">
+                    <ul>
+                        <li>综合排序</li>
+                        <li>人气最高</li>
+                        <li class="select">价格最高</li>
+                        <li>价格最低</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="sort">
+                <span>课程分类</span>
+                <div class="filter-list se">
+                    <ul>
+                        <li class="select">全部</li>
+                        <li>语文</li>
+                        <li>数学</li>
+                        <li>英语</li>
+                    </ul>
+                </div>
+            </li>
+            <li class="filter-menu">
+                <span>筛选</span>
+                <div class="filter-list se">
+                    <p>状态：</p>
+                    <ul>
+                        <li class="select">为开课</li>
+                        <li>录制中</li>
+                        <li>随到随学</li>
+                    </ul>
+                    <p>价格：</p>
+                    <ul>
+                        <li class="select">免费</li>
+                        <li>￥10</li>
+                        <li>￥100</li>
+                    </ul>
+                    <div class="btn-warp">
+                        <button class="reset">重置</button>
+                        <button class="confirm">确定</button>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <div class="sear-result">
+        <ul>
+            <li ng-repeat="v in video">
+                <a href="" ui-sref="content(v)">
+                    <div class="pic">
+                        <img src="{{v.videoPic}}" alt="">
+                        <div class="num">{{v.sign}}人已报名</div>
+                    </div>
+                    <div class="info">
+                        <h1>{{v.videoName}}</h1>
+                        <p class="price">{{v.price}}</p>
+                        <div class="lesson-time">
+                            <span>{{v.ctime}}<em>{{v.status}}</em></span>
+                        </div>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <div class="mask"></div>
+    </div>
+</div>
+  </ion-content>
+</ion-view>

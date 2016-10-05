@@ -15,13 +15,9 @@ http.createServer( function (request, response) {
    fs.readFile(pathname.substr(1), function (err, data) {
       if (err) {
          console.log(err);
-         // HTTP 状态码: 404 : NOT FOUND
-         // Content Type: text/plain
          response.writeHead(404, {'Content-Type': 'text/html'});
       }else if (request.url.indexOf('.html')!=-1)
        {	         
-         // HTTP 状态码: 200 : OK
-         // Content Type: text/plain
          response.writeHead(200, {'Content-Type': 'text/html'});	
          response.write(data.toString());		
       }
@@ -34,8 +30,12 @@ http.createServer( function (request, response) {
          response.write(data.toString());	
       }
       else if(request.url.indexOf('.png')!=-1){
-      	 response.writeHead(200, {'Content-Type': 'application/x-png'});	
-         response.write(data.toString());	
+      	 response.writeHead(200, {'Content-Type': 'image/png'});	
+         response.write(data,"binary");	
+      }
+      else if(request.url.indexOf('.jpg')!=-1){
+          response.writeHead(200, {'Content-Type': 'image/JPEG'});   
+         response.write(data,"binary");   
       }
       else if(request.url.indexOf('.woff')!=-1){
       	 response.writeHead(200, {'Content-Type': 'application/font-woff'});	

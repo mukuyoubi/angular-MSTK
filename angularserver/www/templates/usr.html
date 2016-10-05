@@ -1,0 +1,64 @@
+<ion-view >
+  <ion-content>
+<div class="personal_center" >
+<div class="personal_info">
+  <div class="head">
+    <img src="images/img02.jpg">  
+  </div>
+  <h1>茶理理理理</h1>
+  <div class="picking">
+    <ul>
+      <li onclick="$('.sign_up').show().siblings().hide('.bought');$('.arrow').removeClass('to_buy');">我的报名<span>(99)</span></li>
+      <li onclick="$('.bought').show().siblings().hide('.sign_up');$('.arrow').addClass('to_buy');">我的购买<span>(0)</span></li>
+    </ul>
+    <div class="arrow "></div>
+  </div>
+
+</div>
+
+<div class="lessions">
+
+    <div class="lession_list sign_up" >
+      <ul>
+      <li>
+        <div class="item">
+          <div class="pic">
+            <img src="images/img02.jpg" >
+            <div class="num">
+              2570人已报名
+            </div>
+          </div>
+          <h1>南加州大学音乐工程系公开课</h1>
+          <p>支持随到随学(共213节)</p>
+          <p class="price green">免费</p>
+
+        </div>
+      </li>
+
+      <li>
+          <div class="item">
+              <div class="pic">
+                  <img src="images/img02.jpg">
+                  <div class="num">
+                      2570人已报名
+                  </div>
+              </div>
+              <h1>UCLA商学院公开课</h1>
+              <p>支持随到随学(共213节)</p>
+              <p class="price green">免费</p>
+          </div>
+      </li>
+
+      </ul>
+    </div>
+
+    <div class="lession_list nope bought " style="display:none">
+    <img src="images/nope.png" >
+    <p>暂无课程</p>
+    </div>
+
+</div>
+
+</div>
+  </ion-content>
+</ion-view>

@@ -1,0 +1,49 @@
+<ion-view >
+  <ion-content>
+    <div class="video_lession">
+  
+  <div class="video_warp">
+    <div class="video_mask">
+      <a href="http://www.baidu.com"><div class="back"></div></a>
+      <div class="play"></div>
+    </div>
+      <video src="" poster="{{video.videoPic}}"></video>
+  </div>
+
+  <div class="lession_picking">
+    
+    <ul>
+      <li onclick="$(this).addClass('on').siblings().removeClass('on');$('.video_list').show();$('.video_detail').hide();$('.button').hide();">目录</li>
+      <li onclick="$(this).addClass('on').siblings().removeClass('on');$('.video_detail').show();$('.video_list').hide();$('.button').show()" class="on">详情</li>
+    </ul>
+
+
+  </div>
+
+  <div class="video_detail">
+    <h1>{{video.videoName}}</h1>
+    <p class="price red">{{video.videoId}}</p>
+    <div class="summary">
+      <div class="title">简介</div>
+      <div class="content">
+        <p>
+          VR渲染器，材质面板的介绍；VR材质，标准材质等材质的调整，灯光的运用；VR代理，树，小品材质的调整，小别墅，共建，高层住宅等白天和夜景的渲染;半鸟瞰，鸟瞰，规划的等白天夜景，渲染，透视，沿街商业，小住宅，的全模型渲染，步骤，方法， 鸟瞰，住宅，商业裙楼的 场景摆放，全模型渲染，步骤等
+        </p>
+      </div>
+    </div>
+
+  </div>
+  <div class="video_list" style="display:none">
+    <ul>
+      <li><a href=""><h2>1.零基础前端从入门到退坑/放弃/住院</h2></a><div class="floatright"><span class="red">当前课程</span></div></li>
+      <li><a href=""><h2>1.零基础前端从入门到退坑/放弃/住院</h2></a><div class="floatright"><span class="red">当前课程</span></div></li>
+            <li><a href=""><h2>1.零基础前端从入门到退坑/放弃/住院</h2></a><div class="floatright"><span class="red">当前课程</span></div></li>
+                  <li><a href=""><h2>1.零基础前端从入门到退坑/放弃/住院</h2></a><div class="floatright"><span class="red">当前课程</span></div></li>
+                        <li><a href=""><h2>1.零基础前端从入门到退坑/放弃/住院</h2></a><div class="floatright"><span class="red">当前课程</span></div></li>
+                              <li><a href=""><h2>1.零基础前端从入门到退坑/放弃/住院</h2></a><div class="floatright"><span class="red">当前课程</span></div></li>
+    </ul>
+  </div>
+</div>
+
+  </ion-content>
+</ion-view>
