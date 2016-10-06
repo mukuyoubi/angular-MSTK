@@ -5,7 +5,7 @@
                 <div id="swiper-container1" class="swiper-container">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide" ng-repeat="ad in ads">
-                            <a href=""><img src="{{ad.adPic}}" alt=""></a>
+                            <a href=""><img ng-src="{{ad.adPic}}" alt=""></a>
                         </div>
                     </div>
                     <div class="swiper-pagination"></div>
@@ -16,7 +16,7 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide" ng-repeat="sx in sorts">
                             <a href="">
-                                <img src="{{sx.pic}}" alt="">
+                                <img ng-src="{{sx.pic}}" alt="">
                                 <p>{{sx.name}}</p>
                             </a>
                         </div>
@@ -30,18 +30,18 @@
                 <div class="lesson_warp">
                     <div class="lesson_item priority">
                         <div class="pic">
-                            <a ui-sref="content">
-                                <img src="images/banner1.png" alt="">
+                            <a ui-sref="content({{zspriority}})">
+                                <img ng-src="{{zspriority.videoPic}}" alt="">
                             </a>
                         </div>
-                        <p>标题表表表表提踢踢踢提提提提踢踢踢</p>
-                        <div class="info"><span>进度2/12节</span></div>
+                        <p>{{zspriority.videoName}}</p>
+                        <div class="info"><span>进度{{zspriority.pro}}节</span></div>
                     </div>
                     <div class="lesson_normal">
                         <div class="lesson_item " ng-repeat="zs in zslesson">
                             <div class="pic">
                                 <a ui-sref="content({{zs}})">
-                                    <img src="{{zs.videoPic}}" alt="">
+                                    <img ng-src="{{zs.videoPic}}" alt="">
                                 </a>
                             </div>
                             <p>{{zs.videoName}}</p>
@@ -55,20 +55,20 @@
                     <p>独家回放</p>
                 </div>
                 <div class="lesson_warp">
-                    <div class="lesson_item priority">
+                    <div class="lesson_item priority" ng-if="repriority">
                         <div class="pic">
-                            <a href="">
-                                <img src="images/banner1.png" alt="">
+                            <a ui-sref="content({{repriority}})">
+                                <img ng-src="{{repriority.videoPic}}" alt="">
                             </a>
                         </div>
-                        <p>标题表表表表提踢踢踢提提提提踢踢踢</p>
-                        <div class="info"><span>进度2/12节</span></div>
+                        <p>{{repriority.videoName}}</p>
+                        <div class="info"><span>进度{{repriority.pro}}节</span></div>
                     </div>
                     <div class="lesson_normal">
                         <div class="lesson_item " ng-repeat="re in relesson">
                             <div class="pic">
                                 <a ui-sref="content(re)">
-                                    <img src="{{re.videoPic}}" alt="">
+                                    <img ng-src="{{re.videoPic}}" alt="">
                                 </a>
                             </div>
                             <p>{{re.videoName}}</p>
