@@ -16,7 +16,8 @@ angular.module('starter.services', [])
             "ctime": "2016-07-02",
             "status": 1,
             "sign": 233,
-            type: "zslesson"
+            type: "zslesson",
+            "summary":"一些减少日常任务的步骤和不同寻常的跨越民族地域的高级功能，被动关注按照安娜卡列李娜的归纳分为山歌阶段。"
         }, {
             videoId: 12,
             "videoName": "大鱼海棠全网首播",
@@ -27,7 +28,8 @@ angular.module('starter.services', [])
             "ctime": "2016-07-02",
             "status": 1,
             "sign": 233,
-            type: "zslesson"
+            type: "zslesson",
+            "summary":"一些减少日常任务的步骤和不同寻常的跨越民族地域的高级功能，被动关注按照安娜卡列李娜的归纳分为山歌阶段。"
         }, {
             videoId: 13,
             "videoName": "大鱼海棠全网首播",
@@ -38,7 +40,8 @@ angular.module('starter.services', [])
             "ctime": "2016-07-02",
             "status": 1,
             "sign": 233,
-            type: "zslesson"
+            type: "zslesson",
+            "summary":"一些减少日常任务的步骤和不同寻常的跨越民族地域的高级功能，被动关注按照安娜卡列李娜的归纳分为山歌阶段。"
         }, {
             videoId: 14,
             "videoName": "大鱼海棠全网首播",
@@ -49,9 +52,10 @@ angular.module('starter.services', [])
             "ctime": "2016-07-02",
             "status": 1,
             "sign": 233,
-            type: "zslesson"
+            type: "zslesson",
+            "summary":"一些减少日常任务的步骤和不同寻常的跨越民族地域的高级功能，被动关注按照安娜卡列李娜的归纳分为山歌阶段。"
         }, {
-            videoId: 14,
+            videoId: 15,
             "videoName": "大鱼海棠全网首播",
             "videoPic": "images/banner1.jpg",
             "Ispriority": 0,
@@ -60,9 +64,10 @@ angular.module('starter.services', [])
             "ctime": "2016-07-02",
             "status": 1,
             "sign": 233,
-            type: "relesson"
+            type: "relesson",
+            "summary":"一些减少日常任务的步骤和不同寻常的跨越民族地域的高级功能，被动关注按照安娜卡列李娜的归纳分为山歌阶段。"
         }, {
-            videoId: 14,
+            videoId: 16,
             "videoName": "大鱼海棠全网首播",
             "videoPic": "images/banner1.jpg",
             "Ispriority": 0,
@@ -71,9 +76,10 @@ angular.module('starter.services', [])
             "ctime": "2016-07-02",
             "status": 1,
             "sign": 233,
-            type: "relesson"
+            type: "relesson",
+            "summary":"一些减少日常任务的步骤和不同寻常的跨越民族地域的高级功能，被动关注按照安娜卡列李娜的归纳分为山歌阶段。"
         }, {
-            videoId: 14,
+            videoId: 17,
             "videoName": "大鱼海棠全网首播",
             "videoPic": "images/banner1.jpg",
             "Ispriority": 0,
@@ -82,9 +88,10 @@ angular.module('starter.services', [])
             "ctime": "2016-07-02",
             "status": 1,
             "sign": 233,
-            type: "relesson"
+            type: "relesson",
+            "summary":"一些减少日常任务的步骤和不同寻常的跨越民族地域的高级功能，被动关注按照安娜卡列李娜的归纳分为山歌阶段。"
         }, {
-            videoId: 14,
+            videoId: 18,
             "videoName": "大鱼海棠全网首播",
             "videoPic": "images/banner1.jpg",
             "Ispriority": 0,
@@ -93,7 +100,8 @@ angular.module('starter.services', [])
             "ctime": "2016-07-02",
             "status": 1,
             "sign": 233,
-            type: "relesson"
+            type: "relesson",
+            "summary":"一些减少日常任务的步骤和不同寻常的跨越民族地域的高级功能，被动关注按照安娜卡列李娜的归纳分为山歌阶段。"
         }
 
     ];

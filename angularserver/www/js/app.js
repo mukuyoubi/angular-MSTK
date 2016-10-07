@@ -38,9 +38,6 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     .state('content', {
     url: '/content/:videoId',
     templateUrl: 'templates/content.html',
-    // params: {
-    //     "videoId": "videoId" // 这个地方就可以随便你用了. 因为这个参数没在state的url中体现出来
-    // },
     controller: 'ContentCtrl'
   })
 

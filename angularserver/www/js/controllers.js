@@ -31,7 +31,7 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('SearchCtrl', function($scope, $stateParams) {
+.controller('SearchCtrl', function($scope, $stateParams,video) {
 
     $scope.video = video.all();
 
@@ -42,4 +42,27 @@ angular.module('starter.controllers', [])
     
     $scope.video = video.getVideo($stateParams.videoId);
     console.log(video.getVideo($stateParams.videoId));
+})
+
+
+.controller('viewController', function($scope) {
+
+        var view = this,
+        nameArray = ["list", "detail"],
+        indexCurrent = 0;
+        $scope.isOn = false;
+
+        view.next = next;
+        view.current = nameArray[indexCurrent];
+
+        function next(){
+            indexCurrent = (indexCurrent + 1) % nameArray.length;
+            view.current = nameArray[indexCurrent];
+            if(indexCurrent==1){
+                $scope.isOn=true;
+            }
+            if(indexCurrent==0){
+                $scope.isOn=false;
+            }
+        }
 })

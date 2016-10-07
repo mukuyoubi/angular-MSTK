@@ -1230,4 +1230,9 @@ textarea {
 }
 .bar-header{
   padding: 0;
+  height: 2rem;
+}
+
+.has-header {
+    top: 2rem;
 }
