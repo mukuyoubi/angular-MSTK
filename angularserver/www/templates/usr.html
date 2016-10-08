@@ -3,13 +3,13 @@
 <div class="personal_center" >
 <div class="personal_info">
   <div class="head">
-    <img ng-src="images/img02.jpg">  
+    <img ng-src="{{userInfo.userPic}}">  
   </div>
-  <h1>茶理理理理</h1>
+  <h1>{{userInfo.userName}}</h1>
   <div class="picking">
     <ul>
-      <li onclick="$('.sign_up').show().siblings().hide('.bought');$('.arrow').removeClass('to_buy');">我的报名<span>(99)</span></li>
-      <li onclick="$('.bought').show().siblings().hide('.sign_up');$('.arrow').addClass('to_buy');">我的购买<span>(0)</span></li>
+      <li >我的报名<span>({{mySign}})</span></li>
+      <li >我的购买<span>({{myBuy}})</span></li>
     </ul>
     <div class="arrow "></div>
   </div>

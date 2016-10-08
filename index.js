@@ -9,7 +9,8 @@ http.createServer( function (request, response) {
    var pathname = url.parse("/angularserver/www"+request.url).pathname;
    
    // 输出请求的文件名
-   console.log("Request for " +"angularserver/www"+pathname + " received.");
+   // console.log("Request for " +"angularserver/www"+pathname + " received.");
+   console.log(request.connection.remoteAddress);
    
    // 从文件系统中读取请求的文件内容
    fs.readFile(pathname.substr(1), function (err, data) {
@@ -52,3 +53,11 @@ http.createServer( function (request, response) {
 
 // 控制台会输出以下信息
 console.log('Server running at http://127.0.0.1:8081/');
+                                                                                           
+console.log("   ##   #    #  ####  #    # #        ##   #####       #  ####     #####  ###### #    #  ####  " );  
+console.log("  #  #  ##   # #    # #    # #       #  #  #    #      # #         #    # #      ##  ## #    #   ");
+console.log(" #    # # #  # #      #    # #      #    # #    #      #  ####     #    # #####  # ## # #    #   ");
+console.log(" ###### #  # # #  ### #    # #      ###### #####       #      #    #    # #      #    # #    #   ");
+console.log(" #    # #   ## #    # #    # #      #    # #   #  #    # #    #    #    # #      #    # #    #   ");
+console.log(" #    # #    #  ####   ####  ###### #    # #    #  ####   ####     #####  ###### #    #  ####    ");
+                                                                                               

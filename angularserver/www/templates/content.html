@@ -28,23 +28,9 @@
                     </div>
                 </div>
                 <div class="video_list" ng-switch-when="detail">
-                    <ul>
-                        <li><a href=""><h2>1.零基础前端从入门到退坑/放弃/住院</h2></a>
-                            <div class="floatright"><span class="red">当前课程</span></div>
-                        </li>
-                        <li><a href=""><h2>1.零基础前端从入门到退坑/放弃/住院</h2></a>
-                            <div class="floatright"><span class="red">当前课程</span></div>
-                        </li>
-                        <li><a href=""><h2>1.零基础前端从入门到退坑/放弃/住院</h2></a>
-                            <div class="floatright"><span class="red">当前课程</span></div>
-                        </li>
-                        <li><a href=""><h2>1.零基础前端从入门到退坑/放弃/住院</h2></a>
-                            <div class="floatright"><span class="red">当前课程</span></div>
-                        </li>
-                        <li><a href=""><h2>1.零基础前端从入门到退坑/放弃/住院</h2></a>
-                            <div class="floatright"><span class="red">当前课程</span></div>
-                        </li>
-                        <li><a href=""><h2>1.零基础前端从入门到退坑/放弃/住院</h2></a>
+                    <ul ng-if="videolist">
+                        <li ng-repeat="lesson in videolist">
+                        <a href=""><h2>{{lesson.lessonName}}</h2></a>
                             <div class="floatright"><span class="red">当前课程</span></div>
                         </li>
                     </ul>

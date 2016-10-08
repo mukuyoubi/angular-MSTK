@@ -329,8 +329,8 @@ textarea {
   border: solid 5px #bbc7d9;
 }
 .personal_center .personal_info h1 {
-  margin-top: 1.13636364rem;
-  font-size: 0.63636364rem;
+    margin-top: 0.736364rem;
+    font-size: 1.236364rem;
   color: #b9bfca;
   text-align: center;
 }

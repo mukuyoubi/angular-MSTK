@@ -27,7 +27,12 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('UsrCtrl', function($scope) {
+.controller('UsrCtrl', function($scope,userInfo) {
+
+        $scope.userInfo=userInfo.getuser();
+        console.log($scope.userInfo);
+        $scope.mySign=userInfo.getSign_num();
+        $scope.myBuy=userInfo.getBought_num();
 
 })
 
@@ -37,11 +42,13 @@ angular.module('starter.controllers', [])
 
 })
 
-.controller('ContentCtrl', function($scope, $stateParams,video) {
+.controller('ContentCtrl', function($scope, $stateParams,video, videolist) {
 
     
     $scope.video = video.getVideo($stateParams.videoId);
+    $scope.videolist = videolist.getlist($stateParams.videoId);
     console.log(video.getVideo($stateParams.videoId));
+    console.log($scope.videolist);
 })
 
 
