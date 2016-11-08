@@ -1074,18 +1074,18 @@ textarea {
 .search .filters ul li.filter-menu .filter-list ul li {
   margin-bottom: 0 !important;
 }
-.search .filters ul li.filter-menu .filter-list .btn-warp {
+.filter-menu-warp .filter-list .btn-warp {
   overflow: hidden;
   margin: 1.02222222rem 0.44444444rem 0.84444444rem 0.44444444rem;
 }
-.search .filters ul li.filter-menu .filter-list .btn-warp .reset {
+.filter-menu-warp .filter-list .btn-warp .reset {
   float: left;
   border: none;
   background: #fff;
   width: 3.33333333rem;
   height: 1.46666667rem;
 }
-.search .filters ul li.filter-menu .filter-list .btn-warp .confirm {
+.filter-menu-warp .filter-list .btn-warp .confirm {
   float: right;
   background: #4dd0c8;
   border: none;
@@ -1093,6 +1093,7 @@ textarea {
   color: #fff;
   width: 3.33333333rem;
   height: 1.46666667rem;
+  line-height: 1.46666667rem;
 }
 .search .filters ul li.on {
   background: #4dd0c8;
@@ -1108,7 +1109,7 @@ textarea {
   margin-left: 0.22222222rem;
   vertical-align: -0.17777778rem;
 }
-.search .filters ul li .filter-list {
+.filter-menu-warp .filter-list {
   display: none;
   position: absolute;
   top: 1.95555556rem;
@@ -1117,7 +1118,7 @@ textarea {
   background: #fff;
   z-index: 999;
 }
-.search .filters ul li .filter-list ul li {
+.filter-menu-warp .filter-list ul li {
   height: 1.77777778rem;
   width: 100%;
   color: #666666;
@@ -1125,14 +1126,15 @@ textarea {
   text-align: left;
   text-indent: 0.95555556rem;
 }
-.search .filters ul li .filter-list ul li.select {
+.filter-menu-warp .filter-list ul li.select {
   background: #4dd0c8;
   color: #fff;
 }
-.search .filters ul li .filter-list.se ul {
+.filter-menu-warp .filter-list.se ul {
   padding: 0.44444444rem 0.66666667rem 0 0.66666667rem;
+  overflow: hidden;
 }
-.search .filters ul li .filter-list.se ul li {
+.filter-menu-warp .filter-list.se ul li {
   float: left;
   width: 4.13333333rem;
   height: 1.33333333rem;
@@ -1143,10 +1145,10 @@ textarea {
   margin-right: 1.11111111rem;
   margin-bottom: 0.62222222rem;
 }
-.search .filters ul li .filter-list.se ul li.select {
+.filter-menu-warp .filter-list.se ul li.select {
   border: none;
 }
-.search .filters ul li .filter-list.se ul li:nth-child(3n) {
+.filter-menu-warp .filter-list.se ul li:nth-child(3n) {
   margin-right: 0;
 }
 .search .sear-result {
@@ -1235,4 +1237,29 @@ textarea {
 
 .has-header {
     top: 2rem;
+}
+
+.no-result{
+      height: 9.7rem;
+      width: 6.6rem;
+      margin: 0.8rem auto;
+
+    }
+
+.no-result img{
+      height: 9.7rem;
+      width: 6.6rem;
+
+          }
+
+.overflow-scroll > .scroll {
+    -webkit-overflow-scrolling: touch;
+    background-color: #f8f8f8;
+    width: 100%;
+}
+
+
+.scroll-content {
+
+    background-color: #f8f8f8;
 }
