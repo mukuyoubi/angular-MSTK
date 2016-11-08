@@ -2,20 +2,26 @@
   <ion-content>
 <div class="search">
     <div class="filters">
-        <ul>
+        <ul class="sorter">
             <li class="seq" >
                 <span>综合排序</span>
+            </li>
+            <li class="sort">
+                <span>课程分类</span>
+            </li>
+            <li class="filter-menu">
+                <span>筛选</span>
+            </li>
+        </ul>
+        <div class="filter-menu-warp">
                 <div class="filter-list">
-                    <ul>
+                    <ul >
                         <li>综合排序</li>
                         <li>人气最高</li>
                         <li class="select">价格最高</li>
                         <li>价格最低</li>
                     </ul>
                 </div>
-            </li>
-            <li class="sort">
-                <span>课程分类</span>
                 <div class="filter-list se">
                     <ul>
                         <li class="select">全部</li>
@@ -24,9 +30,6 @@
                         <li>英语</li>
                     </ul>
                 </div>
-            </li>
-            <li class="filter-menu">
-                <span>筛选</span>
                 <div class="filter-list se">
                     <p>状态：</p>
                     <ul>
@@ -45,8 +48,7 @@
                         <button class="confirm">确定</button>
                     </div>
                 </div>
-            </li>
-        </ul>
+        </div>
     </div>
     <div class="sear-result">
         <ul>
@@ -68,6 +70,9 @@
         </ul>
         <div class="mask"></div>
     </div>
+            <div class="no-result" ng-show="video.length == 0">
+                <img src="images/nope1.png" alt="">
+            </div>
 </div>
   </ion-content>
 </ion-view>

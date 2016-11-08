@@ -15,7 +15,7 @@
                 <div id="swiper-container2" class="swiper-container swiper-container-horizontal swiper-container-free-mode">
                     <div class="swiper-wrapper">
                         <div class="swiper-slide" ng-repeat="sx in sorts">
-                            <a href="">
+                            <a ui-sref="search({{sx}})">
                                 <img ng-src="{{sx.pic}}" alt="">
                                 <p>{{sx.name}}</p>
                             </a>
@@ -25,7 +25,7 @@
             </div>
             <div class="zs_lesson">
                 <div class="zs_lesson_title">
-                    <p>中山名师课堂</p>
+                    <p>直播</p>
                 </div>
                 <div class="lesson_warp">
                     <div class="lesson_item priority">
