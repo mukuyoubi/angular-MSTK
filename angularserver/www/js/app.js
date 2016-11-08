@@ -31,7 +31,7 @@ angular.module('starter', ['ionic', 'starter.controllers', 'starter.services'])
     controller: 'UsrCtrl'
   })
     .state('search', {
-    url: '/search',
+    url: '/search/:id/:searchContent/',
     templateUrl: 'templates/search.html',
     controller: 'SearchCtrl'
   })

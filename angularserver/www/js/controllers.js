@@ -38,13 +38,43 @@ angular.module('starter.controllers', [])
 
 .controller('SearchCtrl', function($scope, $stateParams,video) {
 
-    $scope.video = video.all();
+    $scope.video = video.sortByid($stateParams.id);
+    console.log($stateParams.id);
+
+        var $ul = $('.sorter', '.filters');
+        var $Seq = $ul.find('li');
+        let $menu_div = $('.filter-list','.filter-menu-warp');
+        $Seq.click(
+           function () {
+            //    $('.masks').toggle();
+            //    $('.filter-list').toggle();
+               $(this).toggleClass('on');
+               $(this).siblings().removeClass('on');
+               if($(this).index()===0){
+
+                   $menu_div.eq(0).siblings().hide();
+                   $menu_div.eq(0).toggle();
+
+               }
+               if($(this).index()===1){
+
+                   $menu_div.eq(1).siblings().hide();
+                   $menu_div.eq(1).toggle();
+
+               }
+               if($(this).index()===2){
+
+                   $menu_div.eq(2).siblings().hide();
+                   $menu_div.eq(2).toggle();
+
+               }
+           }
+        );
 
 })
 
 .controller('ContentCtrl', function($scope, $stateParams,video, videolist) {
 
-    
     $scope.video = video.getVideo($stateParams.videoId);
     $scope.videolist = videolist.getlist($stateParams.videoId);
     console.log(video.getVideo($stateParams.videoId));
